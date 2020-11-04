@@ -36,7 +36,7 @@ pipeline {
 
                         // Determine if these charts should be pushed to "stable" or "staging" based on the branch
                         def repoType
-                        if (env.BRANCH_NAME == "main") {
+                        if (env.BRANCH_NAME == "master") {
                             repoType = "stable"
                         } else {
                             repoType = "staging"
